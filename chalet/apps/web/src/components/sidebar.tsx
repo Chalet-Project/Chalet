@@ -159,10 +159,10 @@ export function Sidebar() {
             </div>
             <div>
               <h1 className="text-xl font-bold text-base-content">
-                Proxmox Manager
+                Chalet
               </h1>
               <p className="text-sm text-base-content/60">
-                Professional PVE Interface
+                Proxmox Manager
               </p>
             </div>
           </div>

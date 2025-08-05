@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Proxmox Manager - chalet",
+  title: "Chalet - Proxmox Manager",
   description: "Modern Proxmox PVE Management Interface",
 };
 
