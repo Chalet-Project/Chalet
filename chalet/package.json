@@ -1,27 +1,31 @@
 {
   "name": "chalet",
-  "version": "0.1.0",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F server db:push",
+    "db:studio": "turbo -F server db:studio",
+    "db:generate": "turbo -F server db:generate",
+    "db:migrate": "turbo -F server db:migrate",
+    "db:start": "turbo -F server db:start",
+    "db:watch": "turbo -F server db:watch",
+    "db:stop": "turbo -F server db:stop",
+    "db:down": "turbo -F server db:down"
   },
-  "dependencies": {
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
-    "next": "15.4.5"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "typescript": "^5.9.2",
-    "@types/node": "^24.2.0",
-    "@types/react": "^19.1.9",
-    "@types/react-dom": "^19.1.7",
-    "@tailwindcss/postcss": "^4.1.11",
-    "tailwindcss": "^4.1.11",
-    "eslint": "^9.32.0",
-    "eslint-config-next": "15.4.5",
-    "@eslint/eslintrc": "^3.3.1"
-  }
+    "bun-plugin-tailwind": "^0.0.15",
+    "daisyui": "^5.0.50",
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "bun@1.2.18"
 }

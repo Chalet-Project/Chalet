@@ -3,6 +3,22 @@ applyTo: '**'
 ---
 # Copilot Instructions for Chalet Project
 
+Project Name: chalet
+Frontend: DaisyUI + TailwindCSS + next
+Backend: hono
+Runtime: bun
+API: trpc
+Database: postgres
+ORM: drizzle
+Authentication: Yes
+Addons: pwa, turborepo
+Examples: none
+Git Init: Yes
+Package Manager: bun
+Install Dependencies: Yes
+Database Setup: docker
+Web Deployment: none
+
 ## Architecture Overview
 - **Monorepo** managed by Turborepo, with all code in `chalet/`
 - **Frontend**: `chalet/apps/web` (Next.js, TailwindCSS, DaisyUI)
